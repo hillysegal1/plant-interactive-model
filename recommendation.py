@@ -5,7 +5,17 @@ import google.generativeai as genai
 from IPython.display import Markdown
 import re
 import string
+def load_env_variables(env_file_path):
+    with open(env_file_path, 'r') as file:
+        for line in file:
+            key, value = line.strip().split('=')
+            os.environ[key] = value
 
+# Load environment variables from env.txt
+load_env_variables('env.txt')
+
+# Access environment variables
+API_KEY = os.environ.get('API_KEY')
 def redo():
     p = st.session_state['shared_string']
     GOOGLE_API_KEY = API_KEY
