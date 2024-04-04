@@ -17,7 +17,7 @@ def main():
       st.session_state['shared_string'] = "hi"
       st.session_state['p_name'] = user_input
       st.session_state['current_page'] = 'how_to'
-  image_path = "/content/im.png"
+  image_path = "im.png"
   st.image(image_path)
 if __name__ == '__main__':
   main()
