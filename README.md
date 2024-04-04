@@ -37,7 +37,7 @@ To run the project, follow these steps:
    streamlit run app.py & npx localtunnel --port 8501
    ```
 3. Select the third hyper link that appears in the following format: your url is: https://tender-melons-make.loca.lt
-4. In the new page eneter your port number from step 5. in "Setting up the Development Environment".
+4. In the new page enter your port number from step 5. in "Setting up the Development Environment".
 
 # Usage:
 1. A detailed instruction on how to use the system is provided in the demo video: ----
