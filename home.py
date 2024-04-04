@@ -13,7 +13,7 @@ lottie_url_right = "https://lottie.host/21d43043-eda8-4e0e-9e42-0a6dd9052dce/Use
 # Load Lottie animations
 lottie_animation_left = load_lottieurl(lottie_url_left)
 lottie_animation_right = load_lottieurl(lottie_url_right)
-#st.set_page_config(page_title="GROW", page_icon=":seedling:", layout="wide", initial_sidebar_state="expanded")
+
 def main():
   col1, col2, col3 = st.columns([2, 6, 2])
 
