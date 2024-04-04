@@ -1,4 +1,4 @@
-### plant-interactive-system
+### Plant-Interactive-System
 # Overview:
 Our plant system aims to assist users in selecting and caring for plants at home. It provides personalized recommendations for suitable plants based on users' living conditions and preferences. Additionally, it offers comprehensive care guidelines and plant problem diagnosis to ensure healthy plant growth.
 Our system is designed using Streamlit. 
