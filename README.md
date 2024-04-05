@@ -10,24 +10,20 @@ Upon accessing the system's homepage, users are presented with two options: "Pla
 ## Setting up the Development Environment:
 To install and run the code on your local machine, follow these steps:
 1. ### Clone the repository
-1. First, clone the repository to your local machine using Git. Open a terminal and run the following command:
+   First, clone the repository to your local machine using Git. Open a terminal and run the following command:
     ```bash
-    pip install streamlit -q
+    git clone https://github.com/hillysegal1/plant-interactive-model
     ```
-2. Retrieve external IPv4 address:
+2. ### Create and activate the conda environment
+   After cloning the repository, navigate into the project directory:
     ```bash
-    wget -q -O - ipv4.icanhazip.com
+    cd plant-interactive-model
     ```
-3. Upgrade google-generativeai:
+    Then, use the following command to create a conda environment from the requirements.yml file provided in the project:
     ```bash
-    pip install -q -U google-generativeai
+    conda env create -f requirements.yml
     ```
-4. Install Streamlit Lottie extension:
-    ```bash
-    pip install streamlit-lottie
-    ```
-5. After installation a 'port number' should appear, e.g: 34.81.101.203, save this number.
-   
+  
 ## Running the System: 
 To run the project, follow these steps: 
 1. This project uses Gemini API, in "env.txt" enter your personal Gemini API key.
