@@ -1,4 +1,4 @@
-%%writefile findPlant.py
+
 import os
 import streamlit as st
 import pathlib
