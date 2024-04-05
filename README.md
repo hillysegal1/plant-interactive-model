@@ -8,8 +8,9 @@ Upon accessing the system's homepage, users are presented with two options: "Pla
 
 # Getting Started:
 ## Setting up the Development Environment:
-To set up the development environment follow these steps:
-1. Install Streamlit:
+To install and run the code on your local machine, follow these steps:
+1. ### Clone the repository
+1. First, clone the repository to your local machine using Git. Open a terminal and run the following command:
     ```bash
     pip install streamlit -q
     ```
