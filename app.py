@@ -1,4 +1,4 @@
-%%writefile app.py
+
 import streamlit as st
 import home, findPlant, plant_diagnosis, plant_care,recommendation, how_to, care
 
