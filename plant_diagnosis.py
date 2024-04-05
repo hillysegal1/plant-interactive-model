@@ -1,4 +1,4 @@
-%%writefile plant_diagnosis.py
+
 
 import streamlit as st
 import numpy as np
