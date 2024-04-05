@@ -26,9 +26,10 @@ To install and run the code on your local machine, follow these steps:
   
 ## Running the System: 
 To run the project, follow these steps: 
-1. This project uses Gemini API, in "env.txt" enter your personal Gemini API key.
+1. This project uses Gemini API, defined in "env.txt".
    Your personal key can be found in: https://ai.google.dev/
-   You may update the env.txt file in your command prompt in the following way:
+
+   You can update the env.txt file in your command prompt in the following way:
    ```bash
    echo API_KEY=your_api_key > C:\path\to\your\env.txt
    ```
