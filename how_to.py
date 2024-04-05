@@ -1,5 +1,4 @@
 
-%%writefile how_to.py
 import streamlit as st
 import pathlib
 import textwrap
