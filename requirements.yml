@@ -6,7 +6,7 @@ dependencies:
   - pip
   - pip:
     - wandb
-    - torch==1.12.1
+    - torch==2.2.1+cu121
     - matplotlib
     - pandas
     - transformers
