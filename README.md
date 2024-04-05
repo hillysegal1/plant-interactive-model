@@ -23,20 +23,19 @@ To install and run the code on your local machine, follow these steps:
     ```bash
     conda env create -f requirements.yml
     ```
-3. After installation a port number should appear in the following format: 34.23.40.196.
-   Save this number. 
   
 ## Running the System: 
 To run the project, follow these steps: 
 1. This project uses Gemini API, in "env.txt" enter your personal Gemini API key.
    Your personal key can be found in: https://ai.google.dev/
-1. Run all python files in main application, run app.py last.
-2. Run the command:
+   You may update the env.txt file in your command prompt in the following way:
    ```bash
-   streamlit run app.py & npx localtunnel --port 8501
+   echo API_KEY=your_api_key > C:\path\to\your\env.txt
    ```
-3. Select the third hyper link that appears in the following format: your url is: https://tender-melons-make.loca.lt
-4. In the new page enter your port number from step 3. in "Setting up the Development Environment".
+3. Run the command:
+   ```bash
+   streamlit run app.py 
+   ```
 
 # Usage:
 1. A detailed instruction on how to use the system is provided in the demo video: ----
