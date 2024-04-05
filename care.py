@@ -1,4 +1,4 @@
-%%writefile care.py
+
 import streamlit as st
 def to_care():
   st.session_state['current_page'] ='plant_care'
