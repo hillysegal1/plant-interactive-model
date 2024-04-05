@@ -15,3 +15,13 @@ dependencies:
     - streamlit
     - google-generativeai
     - streamlit-lottie
+    - requests
+    - tensorflow
+    - pillow
+    - numpy
+    - opencv-python
+    - ipython
+    - textwrap
+    - string
+    - google.colab
+    - cv2
