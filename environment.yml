@@ -15,7 +15,4 @@ dependencies:
     - google.colab
     - streamlit-lottie
   - ipython
-  - numpy
-  - pandas
-  - matplotlib
-  - scikit-learn
+ 
