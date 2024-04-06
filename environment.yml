@@ -11,9 +11,9 @@ dependencies:
     - requests
     - tensorflow
     - pillow
-    - opencv-python
+    - opencv-python-headless
     - google.colab
-    - cv2
+    - streamlit-lottie
   - ipython
   - numpy
   - pandas
