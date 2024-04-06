@@ -8,6 +8,8 @@ Upon accessing the system's homepage, users are presented with two options: "Pla
 
 # Getting Started:
 ## Setting up the Development Environment:
+Pre-requisites: Git and Anaconda. 
+
 To install and run the code on your local machine, follow these steps:
 1. ### Clone the repository
    First, clone the repository to your local machine using Git. Open a terminal and run the following command:
