@@ -21,7 +21,7 @@ To install and run the code on your local machine, follow these steps:
     ```
     Then, use the following command to create a conda environment from the requirements.yml file provided in the project:
     ```bash
-    conda env create -f requirements.yml
+    conda env create -f environment.yml
     ```
   
 ## Running the System: 
