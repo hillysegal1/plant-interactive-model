@@ -3,21 +3,22 @@ channels:
   - defaults
 dependencies:
   - python=3.8
+  - pip
   - pip:
     - wandb
-    - matplotlib
-    - pandas
     - transformers
-    - scipy
-    - scikit-learn
     - streamlit
-    - google-generativeai
-    - streamlit-lottie
     - requests
     - tensorflow
     - pillow
-    - numpy
     - opencv-python
-    - ipython
-    - string
+    - google.colab
     - cv2
+create_default_packages:
+  - pip
+  - ipython
+  - scipy=0.15.0
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
