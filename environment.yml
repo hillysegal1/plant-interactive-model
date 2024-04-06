@@ -15,7 +15,6 @@ dependencies:
     - google.colab
     - cv2
   - ipython
-  - scipy=0.15.0
   - numpy
   - pandas
   - matplotlib
