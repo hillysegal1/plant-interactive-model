@@ -14,8 +14,6 @@ dependencies:
     - opencv-python
     - google.colab
     - cv2
-create_default_packages:
-  - pip
   - ipython
   - scipy=0.15.0
   - numpy
