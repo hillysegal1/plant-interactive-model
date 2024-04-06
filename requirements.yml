@@ -12,6 +12,7 @@ dependencies:
     - scipy
     - scikit-learn
     - streamlit
+    - streamlit.cli
     - google-generativeai
     - streamlit-lottie
     - requests
