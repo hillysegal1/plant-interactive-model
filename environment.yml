@@ -3,7 +3,6 @@ channels:
   - defaults
 dependencies:
   - python=3.8
-  - pip
   - pip:
     - wandb
     - matplotlib
@@ -20,7 +19,5 @@ dependencies:
     - numpy
     - opencv-python
     - ipython
-    - textwrap
     - string
-    - google.colab
     - cv2
