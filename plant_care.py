@@ -1,4 +1,3 @@
-
 import streamlit as st
 from streamlit_lottie import st_lottie
 import requests
@@ -17,7 +16,10 @@ lottie_animation_right = load_lottieurl(lottie_url_right)
 def go_home():
   st.session_state['current_page'] = 'home'
 # Set page title and icon
-
+def diagnose():
+  st.session_state['current_page'] = 'plant_diagnosis'
+def go_to_care():
+  st.session_state['current_page'] = 'care'
 def main():
   if st.button("Back"):
     go_home()
@@ -50,7 +52,7 @@ def main():
       </div>
       """, unsafe_allow_html=True)
       if st.button('Plant Diagnosis'):
-          st.session_state['current_page'] = 'plant_diagnosis'
+        diagnose()
 
   with btn_col2:
       st.markdown("""
@@ -60,7 +62,8 @@ def main():
       </div>
       """, unsafe_allow_html=True)
       if st.button('Care for your Plant'):
-          st.session_state['current_page'] = 'care'
+        go_to_care()
+
 
 if __name__ == '__main__':
   main()
