@@ -8,6 +8,7 @@ dependencies:
   - numpy=1.21.*
   - nodejs=16.13.*
   - flask
+  - tensorflow
   - pip
   - pip:
     - Flask-Testing
