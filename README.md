@@ -32,7 +32,7 @@ To install and run the code on your local machine, follow these steps:
   
 ## Running the System: 
 To run the project, follow these steps: 
-1. To use the Gemini API in this project, you need to authenticate with your API key, which can be found in: 
+1. To use the Gemini API in this project, you need to authenticate with your API key. Your personal key can be found in: 
    https://ai.google.dev/.
 
    Copy your key and run the following command in the terminal:
