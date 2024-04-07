@@ -11,17 +11,7 @@ import re
 import google.generativeai as genai
 from IPython.display import display
 from IPython.display import Markdown
-def load_env_variables(env_file_path):
-    with open(env_file_path, 'r') as file:
-        for line in file:
-            key, value = line.strip().split('=')
-            os.environ[key] = value
 
-# Load environment variables from env.txt
-load_env_variables('env.txt')
-
-# Access environment variables
-API_KEY = os.environ.get('API_KEY')
 
 def process(responses):
     # Starting the prompt with basic user abilities information
