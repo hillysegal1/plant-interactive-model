@@ -8,7 +8,7 @@ dependencies:
   - numpy=1.21.*
   - nodejs=16.13.*
   - flask
-  - tensorflow
+  - tensorflow==2.15.0
   - charset-normalizer
   - pip
   - pip:
