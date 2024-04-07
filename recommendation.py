@@ -5,7 +5,11 @@ import google.generativeai as genai
 from IPython.display import Markdown
 import re
 import string
-API_KEY = st.secrets["API_KEY"]
+import os
+
+# Access the API key
+API_KEY = os.environ.get('API_KEY')
+
 def redo():
     p = st.session_state['shared_string']
     GOOGLE_API_KEY = API_KEY
