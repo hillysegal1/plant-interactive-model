@@ -12,6 +12,7 @@ dependencies:
   - flask
   - idna
   - charset-normalizer
+  - opencv
   - urllib3
   - pip
   - pip:
