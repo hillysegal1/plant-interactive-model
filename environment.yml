@@ -19,8 +19,6 @@ dependencies:
   - ipython
   - requests
   - pillow
-  - os
-  - string
   - pip
   - pip:
     - Flask-Testing
