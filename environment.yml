@@ -12,6 +12,7 @@ dependencies:
   - pip
   - pip:
     - Flask-Testing
+    - blinker
     - tensorflow==2.15.0
     - streamlit
     - streamlit-lottie
