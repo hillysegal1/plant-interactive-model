@@ -12,7 +12,6 @@ import re
 import google.generativeai as genai
 from IPython.display import display
 from IPython.display import Markdown
-from google.colab import userdata
 import requests
 
 def load_env_variables(env_file_path):
