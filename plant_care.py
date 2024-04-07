@@ -19,7 +19,9 @@ def go_home():
 def diagnose():
   st.session_state['current_page'] = 'plant_diagnosis'
 def go_to_care():
-  st.session_state['current_page'] = 'care'
+    st.session_state['current_page'] = 'care'
+    st.experimental_rerun()  # Force a rerun to update the UI
+
 def main():
   if st.button("Back"):
     go_home()
