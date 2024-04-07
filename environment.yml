@@ -11,6 +11,7 @@ dependencies:
   - nodejs=16.13.*
   - flask
   - charset-normalizer
+  - urllib3
   - pip
   - pip:
     - Flask-Testing
