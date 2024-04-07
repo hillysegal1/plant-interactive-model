@@ -8,11 +8,11 @@ dependencies:
   - numpy=1.21.*
   - nodejs=16.13.*
   - flask
-  - tensorflow==2.15.0
   - charset-normalizer
   - pip
   - pip:
     - Flask-Testing
+    - tensorflow==2.15.0
     - streamlit
     - streamlit-lottie
     - google-generativeai
