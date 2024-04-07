@@ -10,6 +10,7 @@ dependencies:
   - numpy=1.21.*
   - nodejs=16.13.*
   - flask
+  - idna
   - charset-normalizer
   - urllib3
   - pip
