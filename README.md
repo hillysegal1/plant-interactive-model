@@ -50,7 +50,7 @@ To run the project, follow these steps:
 2. Example images for the plant diagnosis feature (plant_diagnosis.py) can be found in "plant_images" folder.
 
 # Plant Diagnosis Algorithm:
-The system uses a MobileNet V2 model for plant diagnosis, a lightweight CNN model pretrained on the ImageNet Dataset. Transfer learning is applied to this model, adding additional layers for classification. Early stopping is implemented during training to avoid overfitting, and an Adam optimizer and categorical cross-entropy loss function are used. Upon receiving an image of a plant, the model outputs a probability distribution across 38 classes, representing various plant diseases or conditions. The Plant Diagnosis model was taken from kaggle: https://www.kaggle.com/code/sunritjana/plant-disease-detection-mobilenetv2/notebook, and is provided in the "models" folder.
+The system uses a MobileNet V2 model for plant diagnosis, a lightweight CNN model pretrained on the ImageNet Dataset. Transfer learning is applied to this model, adding additional layers for classification. Early stopping is implemented during training to avoid overfitting, and an Adam optimizer and categorical cross-entropy loss function are used. Upon receiving an image of a plant, the model outputs a probability distribution across 38 classes, representing various plant diseases or conditions. The Plant Diagnosis model was taken from kaggle: https://www.kaggle.com/code/sunritjana/plant-disease-detection-mobilenetv2/notebook, and is provided in the file: "plant_disease_detection.h5". 
  
 
 # Gemini API Usage:
