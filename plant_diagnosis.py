@@ -14,7 +14,7 @@ def to_care():
 
 # Load the model
 
-model = tf.keras.models.load_model("models/plant_disease_detection.h5")
+model = tf.keras.models.load_model("plant_disease_detection.h5")
 
 
 def load_lottieurl(url: str):
