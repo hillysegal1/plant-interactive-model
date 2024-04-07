@@ -25,17 +25,22 @@ To install and run the code on your local machine, follow these steps:
     ```bash
     conda env create -f environment.yml
     ```
+    Activate the environment with the following command:
+   ```bash
+    conda activate plant_system_env
+    ```
   
 ## Running the System: 
 To run the project, follow these steps: 
-1. This project uses Gemini API, defined in "env.txt".
-   Your personal key can be found in: https://ai.google.dev/
+1. To use the Gemini API in this project, you need to authenticate with your API key, which can be found in: 
+   https://ai.google.dev/.
 
-   You can update the env.txt file in your command prompt in the following way:
+   Copy your key and run the following command in the terminal:
    ```bash
-   echo API_KEY=your_api_key > C:\path\to\your\env.txt
+   set API_KEY="YOUR_API_KEY"
    ```
-3. Run the command:
+   
+2. Run the command:
    ```bash
    streamlit run app.py 
    ```
