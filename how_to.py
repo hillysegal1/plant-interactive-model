@@ -13,10 +13,7 @@ import google.generativeai as genai
 from IPython.display import display
 from IPython.display import Markdown
 import requests
-import os
 
-# Access the API key
-API_KEY = os.environ.get('API_KEY')
 
 def load_lottieurl(url: str):
     r = requests.get(url)
