@@ -12,10 +12,13 @@ dependencies:
   - nodejs=16.13.*
   - flask
   - idna
+  - protobuf
   - charset-normalizer
   - urllib3
   - google-auth
   - ipython
+  - requests
+  - pillow
   - pip
   - pip:
     - Flask-Testing
