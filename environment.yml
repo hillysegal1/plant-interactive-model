@@ -15,6 +15,7 @@ dependencies:
   - charset-normalizer
   - urllib3
   - google-auth
+  - ipython
   - pip
   - pip:
     - Flask-Testing
