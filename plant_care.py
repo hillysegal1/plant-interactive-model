@@ -8,6 +8,7 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
+# Define the URLs for Lottie animations
 lottie_url_left = "https://lottie.host/9e1a8a7c-11e9-4eb2-a52d-ab2e71e4af47/v9iwmsaY9Q.json"
 lottie_url_right = "https://lottie.host/9e1a8a7c-11e9-4eb2-a52d-ab2e71e4af47/v9iwmsaY9Q.json"
 
@@ -15,20 +16,26 @@ lottie_url_right = "https://lottie.host/9e1a8a7c-11e9-4eb2-a52d-ab2e71e4af47/v9i
 lottie_animation_left = load_lottieurl(lottie_url_left)
 lottie_animation_right = load_lottieurl(lottie_url_right)
 
+# Function to go to the home page
 def go_home():
     st.session_state['current_page'] = 'home'
-    st.experimental_rerun()  # Force a rerun to update the UI
 
+# Function to go to the plant diagnosis page
 def diagnose():
     st.session_state['current_page'] = 'plant_diagnosis'
-    st.experimental_rerun()  # Force a rerun to update the UI
 
+# Function to go to the plant care page
 def go_to_care():
     st.session_state['current_page'] = 'care'
-    st.experimental_rerun()  # Force a rerun to update the UI
 
+# Main function to define the layout and behavior of the app
 def main():
-    if st.button("Back"):
+    # Check the current page and navigate accordingly
+    if st.session_state['current_page'] == 'care':
+        go_to_care()
+    elif st.session_state['current_page'] == 'plant_diagnosis':
+        diagnose()
+    else:
         go_home()
 
     # Set background color and center the title and subtitle
@@ -72,6 +79,10 @@ def main():
             """, unsafe_allow_html=True)
         if st.button('Care for your Plant'):
             go_to_care()
+
+# Initialize session state
+if 'current_page' not in st.session_state:
+    st.session_state['current_page'] = 'home'
 
 if __name__ == '__main__':
     main()
