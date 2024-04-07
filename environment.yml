@@ -9,6 +9,7 @@ dependencies:
   - nodejs=16.13.*
   - flask
   - tensorflow
+  - charset-normalizer
   - pip
   - pip:
     - Flask-Testing
