@@ -6,6 +6,7 @@ channels:
 dependencies:
   - python=3.9
   - grpcio
+  - blinker=1.4.*
   - cachetools
   - bokeh=2.4.2
   - numpy=1.21.*
@@ -14,6 +15,11 @@ dependencies:
   - protobuf
   - requests
   - pillow
+  - ipython
+  - google-auth
+  - idna
+  - charset-normalizer
+  - urllib3
   - pip
   - pip:
     - streamlit
