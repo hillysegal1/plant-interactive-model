@@ -21,7 +21,6 @@ dependencies:
   - ipython
   - requests
   - pillow
-  - pyarrow
   - pip
   - pip:
     - Flask-Testing
@@ -30,5 +29,6 @@ dependencies:
     - streamlit-lottie
     - opencv-python
     - google-generativeai
+    - pyarrow
 
  
