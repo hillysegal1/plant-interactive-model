@@ -103,6 +103,7 @@ def main():
 
     if st.button("Back"):
       to_care()
+      st.rerun()
 
     col1, col2, col3 = st.columns([2, 6, 2])
 
