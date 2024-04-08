@@ -44,6 +44,7 @@ lottie_animation_right = load_lottieurl(lottie_url_right)
 def main():
   if st.button("back"):
     back()
+    st.rerun()
   col1, col2, col3 = st.columns([2, 6, 2])
 
   with col1:
