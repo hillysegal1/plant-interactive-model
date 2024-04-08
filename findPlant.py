@@ -11,7 +11,7 @@ import re
 import google.generativeai as genai
 from IPython.display import display
 from IPython.display import Markdown
-
+import os
 
 def process(responses):
     # Starting the prompt with basic user abilities information
@@ -44,7 +44,7 @@ def process(responses):
     return (prompt)
 def response_p(p):
   import google.generativeai as genai
-  GOOGLE_API_KEY= API_KEY
+  GOOGLE_API_KEY = os.environ.get('API_KEY')
   genai.configure(api_key=GOOGLE_API_KEY)
   model = genai.GenerativeModel('gemini-pro')
   response = model.generate_content(
