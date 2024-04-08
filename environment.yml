@@ -28,5 +28,6 @@ dependencies:
     - streamlit
     - streamlit-lottie
     - opencv-python
+    - google-generativeai
 
  
