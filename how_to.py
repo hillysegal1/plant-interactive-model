@@ -13,6 +13,7 @@ import google.generativeai as genai
 from IPython.display import display
 from IPython.display import Markdown
 import requests
+import os 
 
 
 def load_lottieurl(url: str):
@@ -54,7 +55,7 @@ def main():
   s = str(st.session_state['p_name'])
   name = re.sub(r'[\d.]+', '', s)
   prompt = "write a couple of lines about"+ ''+name+" ,for example this is information about tomatoes:"+"Tomato plants are known for their versatile fruits that range in color and size. They thrive in warm conditions with plenty of sunlight, requiring well-drained soil and regular care ."
-  GOOGLE_API_KEY= API_KEY
+  GOOGLE_API_KEY = os.environ.get('API_KEY')
   genai.configure(api_key=GOOGLE_API_KEY)
   model = genai.GenerativeModel('gemini-pro')
   response = model.generate_content(
