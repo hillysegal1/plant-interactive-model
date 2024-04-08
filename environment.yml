@@ -21,6 +21,7 @@ dependencies:
   - ipython
   - requests
   - pillow
+  - pyarrow
   - pip
   - pip:
     - Flask-Testing
