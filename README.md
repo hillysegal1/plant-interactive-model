@@ -36,11 +36,19 @@ To run the project, follow these steps:
    https://ai.google.dev/.
 
    Copy your key and run the following command in the terminal:
+
+   For Windows:
    ```bash
-   set API_KEY="YOUR_API_KEY"
+   set API_KEY=your_api_key
+   ```
+
+   For Linux and macOS:
+   ```bash
+   export API_KEY=your_api_key
+
    ```
    
-2. Run the command:
+3. Run the command:
    ```bash
    streamlit run app.py 
    ```
