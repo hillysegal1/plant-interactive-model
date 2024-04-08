@@ -2,7 +2,6 @@ name: plant_system_env
 channels:
   - conda-forge
   - defaults
-  - fastai
   
 dependencies:
   - python=3.9
@@ -29,6 +28,6 @@ dependencies:
     - streamlit-lottie
     - opencv-python
     - google-generativeai
-    - pyarrow
+    
 
  
