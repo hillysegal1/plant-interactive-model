@@ -54,16 +54,16 @@ def res():
         for index, line in enumerate(lines):
             if index % 2 == 0:
               parts= line
-              plant_name = f"{i}.{parts.split(':')[1]}"
-              name=f"{parts.split(':')[1].strip()}"
-              info = lines[index+1]
-
-              # Displaying the part with a green colored font using HTML within the Streamlit markdown
-              st.markdown(f'<span style="color:green;"><strong>{plant_name}</strong></span>', unsafe_allow_html=True)
-              st.markdown(f'<span style="color:green;"><strong></strong></span> {info}', unsafe_allow_html=True)
-
-              # Preparing a unique key for the button to avoid duplication
-              button_key = f"button_{index}"
+              plant_info = parts.split(':')
+              if len(plant_info) >= 2:
+                plant_name = f"{i}.{plant_info[1].strip()}"
+                name = plant_info[1].strip()
+                info = lines[index + 1] if index + 1 < len(lines) else "Information missing"
+                # Displaying the part with a green colored font using HTML within the Streamlit markdown
+                st.markdown(f'<span style="color:green;"><strong>{plant_name}</strong></span>', unsafe_allow_html=True)
+                st.markdown(f'<span style="color:green;"><strong></strong></span> {info}', unsafe_allow_html=True)
+                # Preparing a unique key for the button to avoid duplication
+                button_key = f"button_{index}"
 
               # Creating a button that, when clicked, provides care instructions for the item
               if st.button(f"How to Care for {name}", key=button_key):
