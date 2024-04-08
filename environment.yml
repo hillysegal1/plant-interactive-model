@@ -28,6 +28,7 @@ dependencies:
     - streamlit-lottie
     - opencv-python
     - google-generativeai
+    - pyarrow
     
 
  
