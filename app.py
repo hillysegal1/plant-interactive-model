@@ -1,7 +1,10 @@
 
 import streamlit as st
 import home, findPlant, plant_diagnosis, plant_care,recommendation, how_to, care
+import os
 
+# Set environment variable
+os.environ['CONDA_NO_PLUGINS'] = 'true'
 st.set_page_config(page_title="GROW", page_icon=":seedling:", layout="wide", initial_sidebar_state="expanded")
 
 def main():
