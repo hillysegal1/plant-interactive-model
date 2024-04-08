@@ -7,12 +7,12 @@ import re
 import string
 import os
 
-# Access the API key
-API_KEY = os.environ.get('API_KEY')
+
+
 
 def redo():
     p = st.session_state['shared_string']
-    GOOGLE_API_KEY = "AIzaSyAXngnoX22Pclly5cDoa8IHPHiR6YDbEB0"
+    GOOGLE_API_KEY = API_KEY
     genai.configure(api_key=GOOGLE_API_KEY)
     model = genai.GenerativeModel('gemini-pro')
     response = model.generate_content(
