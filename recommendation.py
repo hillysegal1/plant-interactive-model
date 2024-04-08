@@ -12,7 +12,7 @@ API_KEY = os.environ.get('API_KEY')
 
 def redo():
     p = st.session_state['shared_string']
-    GOOGLE_API_KEY = API_KEY
+    GOOGLE_API_KEY = "AIzaSyAXngnoX22Pclly5cDoa8IHPHiR6YDbEB0"
     genai.configure(api_key=GOOGLE_API_KEY)
     model = genai.GenerativeModel('gemini-pro')
     response = model.generate_content(
@@ -38,6 +38,7 @@ def go_to_quiz():
 def res():
     if st.button("Back"):
         go_to_quiz()
+        st.rerun()
     else:
         st.markdown("""
             <h1 style='text-align: center; color: green;'>Plant Recommendations</h1>
@@ -68,11 +69,13 @@ def res():
               # Creating a button that, when clicked, provides care instructions for the item
               if st.button(f"How to Care for {name}", key=button_key):
                   how_click(name)
+                  st.rerun()
               i+=1
     st.markdown("&nbsp;")  # Add empty space
     st.markdown("<h3 style='color:green'>Not satisfied with your results? <br> Click the button to try again</h3>", unsafe_allow_html=True)
     if st.button("Try again"):
       redo()
+      st.rerun()
 
 
 def main():
