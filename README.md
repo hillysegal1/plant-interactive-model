@@ -46,7 +46,8 @@ To run the project, follow these steps:
    ```
 
 # Usage:
-1. A detailed instruction on how to use the system is provided in the demo video: ----
+1. A detailed instruction on how to use the system is provided in the demo video: https://drive.google.com/file/d/1-YIspW0yPgMT1NqGIU5t8ByKA6X858x0/view?pli=1
+   
 2. Example images for the plant diagnosis feature (plant_diagnosis.py) can be found in "plant_images" folder.
 
 # Plant Diagnosis Algorithm:
