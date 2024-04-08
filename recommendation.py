@@ -6,12 +6,12 @@ from IPython.display import Markdown
 import re
 #import string
 import os
-GOOGLE_API_KEY = os.environ.get('API_KEY')
+
 
 
 def redo():
     p = st.session_state['shared_string']
-    #GOOGLE_API_KEY= API_KEY
+    GOOGLE_API_KEY = os.environ.get('API_KEY')
     genai.configure(api_key=GOOGLE_API_KEY)
     model = genai.GenerativeModel('gemini-pro')
     response = model.generate_content(
