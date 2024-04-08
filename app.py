@@ -4,13 +4,7 @@ import home, findPlant, plant_diagnosis, plant_care,recommendation, how_to, care
 
 
 import os
-import subprocess
 
-# Set environment variable
-os.environ['CONDA_NO_PLUGINS'] = 'true'
-
-# Run Conda command with plugins disabled
-subprocess.run(['conda', 'install', '<package>'])
 
 # Now run your Streamlit app code
 # Your app code goes here
