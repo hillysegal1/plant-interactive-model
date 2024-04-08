@@ -5,11 +5,6 @@ import google.generativeai as genai
 from IPython.display import Markdown
 import re
 #import string
-import os
-
-
-API_KEY = os.getenv('API_KEY')
-
 
 
 def redo():
