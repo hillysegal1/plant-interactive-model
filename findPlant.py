@@ -67,6 +67,7 @@ def clicked(user_input):
 def main():
   if st.button("Back"):
     go_home()
+    st.rerun()
   st.markdown("""
       <h1 style='text-align: center; color: green;'>Plant Selection</h1>
       <p style='text-align: center; color: green;'>Complete the questionnaire below to find the plant that’s right <br>for you</p>
@@ -116,6 +117,7 @@ def main():
         'care_availability': care_availability,
     }
     clicked(user_input)
+    st.rerun()
 
 if __name__ == '__main__':
   main()
