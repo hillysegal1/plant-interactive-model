@@ -2,6 +2,7 @@ name: plant_system_env
 channels:
   - conda-forge
   - defaults
+  - fastai
   
 dependencies:
   - python=3.9
