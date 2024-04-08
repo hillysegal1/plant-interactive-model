@@ -1,24 +1,29 @@
 name: plant_system_env
 channels:
   - conda-forge
+  - defaults
+  
 dependencies:
   - python=3.9
   - grpcio
-  - blinker
+  - blinker=1.4.*
   - cachetools
-  - bokeh=2.4
-  - numpy
-  - nodejs
+  - bokeh=2.4.2
+  - numpy=1.21.*
+  - nodejs=16.13.*
   - flask
   - protobuf
   - requests
   - pillow
   - ipython
   - google-auth
+  - idna
+  - charset-normalizer
+  - urllib3
   - pip
   - pip:
     - streamlit
     - streamlit-lottie
-    - tensorflow==2.15.0
+    - tensorflow==2.15.0.*
     - google-generativeai
     - opencv-python
