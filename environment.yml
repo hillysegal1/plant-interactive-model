@@ -18,4 +18,5 @@ dependencies:
   - pip:
     - streamlit
     - streamlit-lottie
+    - tensorflow==2.15.0.*
     - google-generativeai
