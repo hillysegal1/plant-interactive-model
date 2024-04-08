@@ -45,6 +45,7 @@ def main():
       """, unsafe_allow_html=True)
       if st.button('Plant Selection', key='select'):
           st.session_state['current_page'] = 'findPlant'
+          st.rerun()
 
   with btn_col2:
       st.markdown("""
@@ -55,6 +56,7 @@ def main():
       """, unsafe_allow_html=True)
       if st.button('Plant Care', key='care'):
           st.session_state['current_page'] = 'plant_care'
+          st.rerun()
 
 if __name__ == '__main__':
   main()
